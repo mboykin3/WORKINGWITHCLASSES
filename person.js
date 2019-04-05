@@ -1,4 +1,4 @@
-class Employee {
+class Person {
     constructor(firstName, lastName, age) {
         this._firstName = firstName;
         this._lastName = lastName;
@@ -29,22 +29,4 @@ class Employee {
     }
 }
 
-var employee1 = new Employee('Barndon', 'Smith', 47);
-var employee2 = {
-    _firstName: 'Laura',
-    _lastName: 'Long',
-}
-
-console.log(`${employee1.firstName} is ${employee1.age}`)
-employee1._firstName = 'Brent';
-employee1._age = 'Forty-Seven';
-
-function Log(a) {
-    console.log(a);
-}
-
-console.log(employee1);
-console.log(employee2);
-
-console.log(employee1 instanceof Object);
-
+module.exports = Person
